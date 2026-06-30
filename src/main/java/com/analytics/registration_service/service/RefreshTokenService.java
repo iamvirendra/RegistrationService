@@ -69,4 +69,10 @@ public class RefreshTokenService {
         refreshTokenRepository.deleteExpiredTokens(LocalDateTime.now());
         log.info("Expired token Cleanup Job completed.");
     }
+
+    @Transactional
+    public void revokeAllUserToken(User user) {
+        refreshTokenRepository.revokeAllUserTokens(user);
+        log.info("All refresh token revoked for user: {}", user.getEmail());
+    }
 }
