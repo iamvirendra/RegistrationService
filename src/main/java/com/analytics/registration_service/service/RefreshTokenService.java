@@ -75,4 +75,5 @@ public class RefreshTokenService {
         refreshTokenRepository.revokeAllUserTokens(user);
         log.info("All refresh token revoked for user: {}", user.getEmail());
     }
+
 }
