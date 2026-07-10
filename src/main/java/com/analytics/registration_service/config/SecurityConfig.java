@@ -1,5 +1,6 @@
-package com.analytics.registration_service.security;
+package com.analytics.registration_service.config;
 
+import com.analytics.registration_service.security.JwtAuthenticationFilter;
 import com.analytics.registration_service.service.UserDetailsServiceImpl;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
