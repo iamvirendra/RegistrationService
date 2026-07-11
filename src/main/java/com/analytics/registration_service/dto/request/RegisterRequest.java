@@ -13,7 +13,7 @@ public class RegisterRequest {
     private String firstName;
 
     @NotBlank(message = "Last Name is Required")
-    @Size(min = 2, max = 2, message = "Last Name is between 2 to 50 characters")
+    @Size(min = 2, max = 50, message = "Last Name is between 2 to 50 characters")
     private String lastName;
 
     @NotBlank(message = "Password is mandatory")
